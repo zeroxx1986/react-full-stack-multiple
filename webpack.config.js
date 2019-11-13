@@ -6,9 +6,9 @@ const outputDirectory = 'dist';
 
 module.exports = {
   entry: {
-    index: './src/client/index.js',
-    admin: './src/admin/index.js',
-    supplier: './src/supplier/index.js'
+    index: './src/client/root/index.js',
+    admin: './src/client/admin/index.js',
+    supplier: './src/client/supplier/index.js'
   },
   output: {
     path: path.join(__dirname, outputDirectory),
@@ -37,6 +37,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   devServer: {
+    host: '0.0.0.0',
     port: 3000,
     open: true,
     proxy: {

@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <p>THIS IS THE ADMIN PANEL</p>
+        <p>THIS IS THE ADMIN PANEL</p> 
       </div>
     );
   }
